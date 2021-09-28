@@ -1,4 +1,4 @@
-### RESTFul Authentication Frontend
+### RESTful Authentication Frontend
 
 This just the basic example of how to implement API Authentication with "access token" and "refresh token" by using Next.js and Redux and it's work on both server side and client side.
 
@@ -39,3 +39,7 @@ P: password
 
 http://localhost:3000
 ```
+
+### Where is the backend?
+
+[https://github.com/michelloworld/restful_auth_backend](https://github.com/michelloworld/restful_auth_backend)
