@@ -1,0 +1,22 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./dockers/app/Dockerfile.dev
+    image: restful_auth_frontend_app_dev
+    container_name: restful-auth-frontend-app-dev
+    volumes:
+      - .:/app
+      - /app/node_modules
+    env_file:
+      - ./.env
+    ports:
+      - ${NODE_PORT}:3000
+    networks:
+      - restful_auth_frontend_network
+
+networks:
+  restful_auth_frontend_network:
+    external:
+      name: restful_auth_network_external
